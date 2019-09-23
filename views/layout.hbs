@@ -5,6 +5,30 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    {{{body}}}
+    	<!-- Static navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid mainNavBar">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed offcanvas-trigger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					 	<span class="icon-bar"></span>
+					</button>   
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+                    	<li>
+							<a href="/cart" class="menu-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart 
+							<span class="badge" id="cart-count">{{session.cartTotalItems}}</span>
+							</a>
+						</li>
+            			<li>
+							<a href="/admin/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+						</li>
+					</ul>
+				</div>
+	        </div>
+	    </nav>
   </body>
 </html>
